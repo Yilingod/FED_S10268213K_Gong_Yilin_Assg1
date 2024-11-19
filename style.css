@@ -1,5 +1,36 @@
-#header{
-    background-color: brown;
-    margin: -10px;
-    margin-bottom: 200px;
+body{
+    background-color: rgb(237, 223, 205);
 }
+header{
+    
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.logo{
+
+}
+
+nav a{
+  margin-left: 5rem;
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(96, 43, 43);
+} 
+
+
+
+ 
