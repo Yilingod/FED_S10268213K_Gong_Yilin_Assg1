@@ -54,16 +54,22 @@ nav a:hover,
 }
 
 @keyframes backgroundChange {
-    0% { background-image: url('Food-Spread-Blossom-Steakhouse.webp'); }
-    33% { background-image: url('home-hero-vince-lombardis-steakhouse-appleton-wi.jpg'); }
-    66% { background-image: url('Mastros1.jpg') ; }
-    100% { background-image: url('BG_Platters.jpg'); } 
+    0% { background-image: url('Images/Food-Spread-Blossom-Steakhouse.webp'); }
+    33% { background-image: url('Images/home-hero-vince-lombardis-steakhouse-appleton-wi.jpg'); }
+    66% { background-image: url('Images/Mastros1.jpg') ; }
+    100% { background-image: url('Images/BG_Platters.jpg'); } 
 }
 
 
 
 footer{
-    background-color: black;
+    background-color:antiquewhite;
     width: 100%;
-    height: 52%;
+    
+}
+footer img{
+    margin: auto;
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }

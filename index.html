@@ -8,38 +8,50 @@
     <link href="style.css" rel="stylesheet">
 
     <style>
-        .content{
-            background-color: rgb(58, 41, 41);
-            height: 800px;
+        .content {
+            background-color: rgb(44, 14, 14);
+            height: auto; /* Adjust height dynamically */
             display: flex;
             flex-direction: row;
+            align-items: center; /* Vertically align items */
+            padding: 20px;
+            gap: 20px; /* Space between columns */
         }
-        .image-section{
+    
+        .image-section {
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             width: 40%;
+            justify-content: center; /* Center images */
+        }
+    
+        img {
+            width: 80%; /* Adjust image width */
+            margin: 10px auto; /* Center images horizontally */
+        }
+    
+        #introduction {
+            font-size: 1.2rem;
+            color: #ffffff; /* Ensure text is readable against background */
+            max-width: 55%; /* Limit text width */
+            line-height: 1.5;
             
         }
-
-        img{
-            width: 70%;
-            margin: 5%;
-            margin-left: 25%;
+        #introduction h1{
+            color: burlywood;
+            font-size: 2.5rem;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        #introduction{
-            font-size: 1.5rem;
-            margin: 15px;
-            
-        }
-
-
+        
+    
+       
     </style>
 </head>
 <body>
     <header>
         
         <a href="index.html" class="logo">
-            <img src="logo.webp" height="110" class="logo">
+            <img src="Images/logo.webp" height="110" class="logo">
         </a>
 
        <nav>
@@ -55,21 +67,39 @@
         <div id="image-change"><h1>PETER LUGER STEAK HOUSE </h1></div>
         <section class = "content">
             <div class = "image-section">
-                <img src="beef steak.webp" alt="image" width="700px">
-                <img src="steakhouse-chef.webp" alt="" width="700px">
+                <img src="Images/beef steak.webp" alt="image" width="700px">
+                <img src="Images/steakhouse-chef.webp" alt="" width="700px">
             </div>
-            <pre id="introduction" >
+            <div id="introduction">
                 <h1>A Legacy of Flavor, A Tradition of Excellence</h1>
+                <br>
+                <p id ="introduction text">
+                    For over a century, Peter Luger has been a beacon for steak lovers, a testament to the enduring power of tradition and the relentless pursuit of perfection. <br><br>
+                                        
+                    From the moment we hand-select the finest prime beef, we embark on a journey to transform ordinary meat into extraordinary flavor. Our time-honored dry-aging process, a testament to patience and expertise, allows the natural enzymes to tenderize and enhance the meat's flavor profile.<br><br>
 
-            </pre>
+                    Our skilled grill masters, steeped in generations of knowledge, orchestrate a symphony of heat and time, searing each steak to perfection. The result? A juicy, flavorful, and visually stunning masterpiece that tantalizes the senses.<br><br>
+
+                    But our commitment extends beyond the plate. We believe that a great meal is more than just food; it's an experience. Our warm, inviting atmosphere, coupled with attentive service, creates the ideal setting to savor every bite.<br><br>
+
+                    As we continue to evolve, we remain steadfast in our pursuit of excellence. We are constantly exploring new techniques and flavors, while honoring the traditions that have made Peter Luger a legendary institution.<br><br>
+
+                    Join us on this culinary journey and discover why Peter Luger has been captivating palates for generations.
+
+                </p>
+            </div>
             
         </section>
 
     </main>
-    
     <footer>
-
-        <h1>hello</h1>
+        
+        <img src="Images/logo.webp" alt="logo">
+        <div>
+            <a href="https://www.facebook.com/PeterLugerSteakHouseTokyo/" >
+                <p>facebook</p>
+            </a>
+        </div>
 
     </footer>
     
