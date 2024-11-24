@@ -67,9 +67,11 @@ footer{
     width: 100%;
     
 }
-footer img{
+#footer-logo{
     margin: auto;
     width: 20%;
     display: flex;
     justify-content: center;
 }
+
+

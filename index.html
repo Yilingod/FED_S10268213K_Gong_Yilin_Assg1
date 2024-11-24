@@ -42,8 +42,47 @@
             font-size: 2.5rem;
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+
+        .container{
+            margin: 5%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .transfer-buttoms{
+            width: 400px;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items:flex-end;
+        }
+        .buttom{
+            font-size: 1.2rem;
+            color: white;
+            font-weight: 800;
+            margin-bottom: 10%;
+            border:solid white 3px;
+            padding: 3% 10%;
+        }
+        .buttom:hover{
+            transition: 0.4s;
+            background-color:rgb(88, 0, 0,0.7);
+            
+        }
+
+        #aboutus-buttom{
+            background-image:url("Images/restaurant_old_photo.jpg") ;
+            background-size: contain;
+        }
+        #menu-buttom{
+            background-image:url("Images/peter-luger-steak.jpg") ;
+            background-size: cover;
+        }
+        #reservation-buttom{
+            background-image:url("Images/restaurant.jpg") ;
+            background-size: contain;
+            
+        }
         
-    
        
     </style>
 </head>
@@ -88,18 +127,23 @@
 
                 </p>
             </div>
-            
         </section>
+        <section class="container">
+           <div class="transfer-buttoms" id="aboutus-buttom">
+                <a href="About_Us.html" class="buttom">ABOUT US</a>
 
+           </div>
+           <div class="transfer-buttoms" id="menu-buttom">
+                <a href="Menu.html" class="buttom">MENU</a>
+
+           </div>
+           <div class="transfer-buttoms" id="reservation-buttom">
+                <a href="Reservation.html" class="buttom">RESERVATION</a>
+           </div>
     </main>
     <footer>
         
-        <img src="Images/logo.webp" alt="logo">
-        <div>
-            <a href="https://www.facebook.com/PeterLugerSteakHouseTokyo/" >
-                <p>facebook</p>
-            </a>
-        </div>
+        <img src="Images/logo.webp" alt="logo" id="footer-logo">
 
     </footer>
     
