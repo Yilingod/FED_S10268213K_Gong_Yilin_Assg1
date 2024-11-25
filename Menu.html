@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steak house</title> 
-    <link rel="icon" type="image/png" href="logo.webp">
+    <link rel="icon" type="image/png" href="Images/logo.webp">
     <link href="style.css" rel="stylesheet">
+
+    <style>
+
+        #menu-top{
+            background-image: url(Images/menu-background.jpg);
+            height: 70vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: 100%;
+            background-position: center;
+            font-size: 2rem;
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(255, 255, 255);
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="logo.webp" height="110" class="logo">
+            <img src="Images/logo.webp" height="110" class="logo">
         </a>
 
        <nav>
@@ -22,9 +40,15 @@
         </nav>
 
     </header>
-    <main></main>
+    <main>
+        <div id="menu-top"><h1>MENU</h1></div>
+
+
+    </main>
     
-    <footer></footer>
+    <footer>
+        <img src="Images/logo.webp" alt="logo" id="footer-logo">
+    </footer>
     
 </body>
 </html>

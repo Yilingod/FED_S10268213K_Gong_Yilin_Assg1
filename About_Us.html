@@ -4,15 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steak house</title> 
-    <link rel="icon" type="image/png" href="logo.webp">
+    <link rel="icon" type="image/png" href="Images/logo.webp">
     <link href="style.css" rel="stylesheet">
+
+    <style>
+    #title{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        font-family:'Times New Roman', Times, serif;
+        border-bottom: solid rgb(41, 0, 0);
+        padding: 5%;
+
+      }
+      .background{
+        height: auto; /* Adjust height dynamically */
+        display: flex;
+        flex-direction: column; 
+        align-items: center; /* Vertically align items */
+        
+      }
+    .history-box1{
+        margin: 6%;
+        display: flex;
+        flex-direction: row;
+    }
+    .history-box1-text h1{
+        font-size: 2rem;
+        color: burlywood;
+    }
+    .history-box1-text p{
+        color: aliceblue;
+        line-height: 1.8;
+        margin-right: 8%;
+
+    }
+    .history-box2{
+        display: flex;
+        direction: row;
+        justify-content: center;
+    }
+
+    .history-box2 img{
+        width: 35%;
+        margin:6%
+    }
+
+
+
+
+    </style>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="logo.webp" height="110" class="logo">
+            <img src="Images/logo.webp" height="110" class="logo">
         </a>
-
        <nav>
             <a href="index.html">Home</a>
             <a href="About_Us.html" class="active">About Us</a>
@@ -24,9 +71,54 @@
        </nav>
 
     </header>
-    <main></main>
+    <main>
+        <img style="width: 100%;" src="Images/about-us-head.webp" alt="img">
+        <h1 id = "title">Peter Luger's Story</h1>
+        <section class = "background" style=" background-color: rgb(23, 0, 0);">
+            
+            <div class = "history-box1">
+                <div style="margin: 2%;" class="history-box1-text">
+                    <h1>One of the oldest steakhouses in America</h1><br>
+                    <p>Founded in 1887 in Brooklyn, "Peter Luger Steak House" (hereinafter referred to as Peter Luger) is one of the oldest steakhouses in the United States. The original name of the establishment was "Carl Luger's Café, Billiards & Bowling Alley." Peter Luger, a German immigrant, was the owner, with his nephew Carl managing the kitchen.<br><br>
+                         Initially, Peter Luger was a local restaurant beloved by nearby residents. However, in 1903, with the opening of the Williamsburg Bridge, Brooklyn became easily accessible from Manhattan. Businessmen from Wall Street and other areas began hearing about the restaurant, and the restaurant flourished. In 1920, Sol Forman, the current owner's family, established a metalworking company across from Carl Luger's Café. For Sol, Carl Luger's Café was the perfect place to entertain customers, and he visited almost every day, sometimes even two or three times a day.<br><br> 
+                         In 1941, the founder, Peter, passed away. The restaurant was taken over by his son, Frederick, and the name was changed to the current "Peter Luger Steak House." By the end of the 1940s, as the United States faced a severe economic downturn, Peter Luger also experienced financial difficulties and was eventually put up for auction. Sol, not wanting to lose a place that served customers so well, participated in the auction and became the owner of the restaurant.
+                    </p>
+                </div>
+                <img src="Images/restaurant_old_photo.webp" alt="img" style="width: 600px;">
+            </div>
+            <div class = "history-box2">
+                <img src="Images/story-1-2.jpg" alt="">
+                <img src="Images/story-1-2.webp" alt="">
+            </div>
+        </section>
+
+        <section class="background">
+            <div>
+                <div>
+                    <h1>The Seven Criteria for Selecting Beef</h1>
+                    <p>Sol, an expert in factory management but inexperienced in restaurant operations, sought to bridge the gap by enlisting the expertise of a retired beef specialist from the United States Department of Agriculture (USDA) to educate his wife, Marsha, in the nuances of discerning the finest beef. He firmly believed that securing the best ingredients was the key to delivering exceptional steaks.
+
+                        Marsha diligently immersed herself in the art of beef selection by visiting various packers. In the New York meat processing industry of that era, she stood out as the sole tall, Russian-speaking woman in a fur coat, yet her passion for the job surpassed her peers. In pursuit of the best beef for the restaurant, Marsha established stringent "Seven Criteria," with only around 20% of the delivered beef meeting her standards. Thanks to her dedication, the restaurant regained its former glory and became prosperous once again.
+                        
+                        The commitment to selecting the finest beef was handed down to Sol and Marsha's daughters, Marilyn Speyer (former president) and Amy Rubenstein (current president). Today, in addition to Amy, Marilyn's daughter Jody and Jody's nephews Daniel and David also participate in managing the restaurant. They visit multiple beef wholesalers every week, endorsing the beef selected through the "Seven Criteria" with their stamp. This stamp serves as the hallmark of the beef purchased by Peter Luger. With a trust established over 70 years, they have earned the privilege of choosing the best beef ahead of any other restaurant.
+                    </p>
+
+                </div>
+                <img src="Images/story-2-1.jpg" alt="">
+
+            </div>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+        </section>
+
+    </main>
     
-    <footer></footer>
+    <footer>
+        <img src="Images/logo.webp" alt="logo" id="footer-logo">
+    </footer>
     
 </body>
 </html>
