@@ -23,6 +23,116 @@
             color:rgb(255, 255, 255);
         }
 
+        #title{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        font-family:'Times New Roman', Times, serif;
+        margin: 5% 37% ;
+        padding: 0%;
+        border-bottom: solid rgb(23, 0, 0) 5px;
+        
+        
+
+      }
+
+      #menu-section1{
+        background-color: rgb(23, 0, 0);
+        padding: 2% 5%;
+        display: flex;
+        flex-direction: row;
+      }
+      #menu-section1 img{
+        width: 45%;
+      }
+      #menu-section1 div{
+        padding:0% 7%;
+        line-height: 2;
+        
+      }
+      #menu-section2{
+        padding: 2% 5%;
+        display: flex;
+        flex-direction: column;
+      }
+      .menu-section2-boxes{
+        display: flex;
+        margin: 5%;
+      }
+      .menu-section2-boxes img{
+        width: 27%;
+        height: fit-content;
+      }
+      .section2-text{
+            margin-left: 5%; 
+            
+      }
+      .section2-text p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-right: 60%;
+        word-spacing: 5px;
+        line-height: 1.8;
+      }
+      #menu-section3{
+        padding: 2% 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(25, 0, 0);
+      }
+      #section3-big{
+        display: flex;
+        flex-direction: row;
+      }
+      .section3-big-boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers content in the column */
+        text-align: center; /* Centers text inside each box */
+      }
+      .section3-big-boxes img{
+        width: 65%;
+        border: solid gold 2px;
+      }
+      .section3-big-boxes h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5em;
+        color:burlywood;
+      }
+
+      .section3-big-boxes p{
+        color: #ccc;
+        line-height: 1.6;
+        margin-top: 3%;
+        width: 60%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #section3-small{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        margin: 5%;
+
+        
+      }
+      #section3-list{
+        display: flex;
+        flex-direction: row;
+        
+      }
+      #section3-list li{
+        list-style: none;
+      }
+      #section3-list li h1{
+        color: aliceblue;
+      
+      }
+      #section3-list li img{
+        width: 70%;
+        border: solid gold 1px;
+      }
+      
     </style>
 </head>
 <body>
@@ -42,8 +152,94 @@
     </header>
     <main>
         <div id="menu-top"><h1>MENU</h1></div>
+        <h1 id = "title">Peter Luger's Menu</h1>
+        <section id = "menu-section1">
+            <div>
+                <h1 style="color: burlywood; font-size: 2rem;">T-bone steak</h1><br>
+                <p style="color: aliceblue;">
+                    When it comes to Peter Luger, the T-bone steak is the standout. We meticulously source this premium-grade beef from the highest-rated cuts classified by the United States Department of Agriculture (USDA), employing a discerning technique passed down through generations.<br><br>
 
+                    The chilled and air-shipped beef undergoes a unique aging process in a dedicated aging room within the restaurant for over a month. Aging enhances the flavor and aroma, resulting in a more tender texture. The well-aged meat is cut around the edges, seasoned with salt, and broiled in a special oven called a broiler to seal in the flavor.<br><br>
 
+                    After cutting and placing the meat on the plate with melted butter, it is returned to the broiler. After a few minutes of cooking, it is brought to the guest's table. This steak offers a unique flavor that intensifies with every bite—a truly unparalleled culinary experience.
+                </p>
+
+            </div>
+            <img src="Images/T-bones.webp" alt="img">
+        </section>
+
+        <section id="menu-section2">
+            <div class="menu-section2-boxes">
+                <img src="Images/our-features-2.webp" alt="img">
+                <div class="section2-text">   
+                    <h1>Luger Burger</h1><br>
+                    <p>
+                        The Luger Burger is a well-loved choice at Peter Luger. The patty combines dry-aged prime-grade T-bone and rib sourced from our in-house aging room, along with fresh chuck eye roll. This blend allows you to enjoy the rich flavor of red meat and the enticing aroma of aging. 
+                        Slow-cooked in a specialized oven known as a broiler, the result is a crispy surface, and with each bite, the juices spread, delivering a delightful culinary experience. It is served as a lunch menu in the dining room but is available all day at the first-floor bar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-section2-boxes">
+                <img src="Images/our-features-3.webp" alt="img" style="margin-left: 35%;">
+                <div class="section2-text">
+                    <h1 >Private Label Red Wine</h1><br>
+                    <p style="margin-right: 10%;">
+                        Private label red wine is an essential complement to the dining experience at Peter Luger. It is crafted using low-yield grapes from the western slopes of Oakville, at the heart of Napa Valley. 
+                        From cultivation to fermentation, every step is done by hand. You can enjoy the distinct Oakville flavor, characterized by robust structure, supple tannins, and a complex interplay of flavors.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu-section3">
+
+            <div id="section3-big">
+                <div class="section3-big-boxes">
+                    <h1>Tiramisú</h1>
+                    <img src="Images/dessert-image1.jpg" alt="">
+                    <p>Indulge in a classic dessert, reimagined! A delectable mix of espresso-drenched lady fingers and luscious tiramisu cream, 
+                        finished with a dusting of rich cocoa powder and delicate marble shavings.
+                    </p>
+                </div>
+
+                <div class="section3-big-boxes">
+                    <h1>Dessert Trio</h1>
+                    <img src="Images/dessert-image2.jpg" alt="">
+                    <p>
+                        Delightful trifecta of Brasão Dessert Trio- Strawberry Cheesecake, Chocolate Mousse Cake, and Carrot Cake.
+                        A true taste of Brazil, one bite at a time!
+                    </p>
+                </div>
+            </div>
+            <section id="section3-small">
+                <h1 style="color: aliceblue;">American Cake</h1><br>
+                <ul id="section3-list">
+                    <li>
+                        <img src="Images/dessert-image3.jpg" alt="">
+                        <h1>Cheese Cake</h1>
+                    </li>
+                    <li>
+                        
+                        <img src="Images/dessert-image4.jpg" alt="">
+                        <h1>Chocolate Mousse</h1>
+                    </li>
+                    <li>
+                        
+                        <img src="Images/dessert-image5.jpg" alt="">
+                        <h1>Peacan Pie</h1>
+                    </li>
+                    <li>
+                        
+                        <img src="Images/dessert-image6.jpg" alt="">
+                        <h1>Key Lime Pie</h1>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </section>
     </main>
     
     <footer>
