@@ -6,6 +6,7 @@
     <title>Steak house</title> 
     <link rel="icon" type="image/png" href="Images/logo.webp">
     <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
     #title{
@@ -60,6 +61,7 @@
         margin:6%
     }
 
+    
 
 
 
@@ -67,9 +69,16 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
+        <a href="index.html" id="logo">
             <img src="Images/logo.webp" height="110" class="logo">
         </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class = "icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
        <nav>
             <a href="index.html">Home</a>
             <a href="About_Us.html" class="active">About Us</a>

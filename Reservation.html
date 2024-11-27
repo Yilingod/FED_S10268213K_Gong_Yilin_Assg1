@@ -6,12 +6,34 @@
     <title>Steak house</title> 
     <link rel="icon" type="image/png" href="Images/logo.webp">
     <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        #calendar-section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(170, 235, 253);
+            min-height: 100vh;
+        }
+        .wrapper{
+
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
-            <img src="logo.webp" height="110" class="logo">
+        <a href="index.html" id="logo">
+            <img src="Images/logo.webp" height="110" class="logo">
         </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class = "icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
 
        <nav>
             <a href="index.html">Home</a>
@@ -22,7 +44,81 @@
         </nav>
 
     </header>
-    <main></main>
+    <main>
+
+     
+
+        <section id="calendar-section">
+            <div class="wrapper"></div>
+            <div>
+
+                <p class="current-date">December 2024</p>
+                <div class="icons">
+                    <i class='bx bx-chevron-left'></i>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+            <div class="calendar">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    
+                
+                </ul>
+
+            </div>
+
+        </section>
+        
+    </main>
     
     <footer>
         <img src="Images/logo.webp" alt="logo" id="footer-logo">

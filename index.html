@@ -6,8 +6,31 @@
     <title>Steak house</title> 
     <link rel="icon" type="image/png" href="Images/logo.webp">
     <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
+        #image-change{
+            height: 70vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: backgroundChange 15s infinite; /* 15s cycle, loops forever */
+            background-size: 100%;
+            background-position: center;
+            font-size: 2rem;
+            font-family:'Times New Roman', Times, serif;
+            color:white;
+            
+        }
+
+        @keyframes backgroundChange {
+            0% { background-image: url('Images/Food-Spread-Blossom-Steakhouse.webp'); }
+            33% { background-image: url('Images/home-hero-vince-lombardis-steakhouse-appleton-wi.jpg'); }
+            66% { background-image: url('Images/Mastros1.jpg') ; }
+            100% { background-image: url('Images/BG_Platters.jpg'); } 
+        }
+
         .content {
             background-color: rgb(28, 0, 0);
             height: auto; /* Adjust height dynamically */
@@ -90,9 +113,15 @@
 <body>
     <header>
         
-        <a href="index.html" class="logo">
+        <a href="index.html" id="logo">
             <img src="Images/logo.webp" height="110" class="logo">
         </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class = "icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
 
        <nav>
             <a href="index.html" class="active">Home</a>

@@ -1,78 +1,137 @@
-body{
+
+body {
     background-color: rgb(246, 238, 228);
 }
-header{
-    
+
+header {
     position: relative;
     width: 100%;
-    height: 12%;
-    padding: 1rem 9%;
+    height: 10%;
+    padding: 0.5rem 9%;
     background-color: rgb(255, 255, 255);
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-.logo :hover{
+
+#logo img {
+    display: inline-block;
+    
+}
+
+#logo:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-nav a{
-  margin-left: 4rem;
-  font-size: larger;
-  font-weight:900;
-  
-  font-family:'Times New Roman', Times, serif;
-  color: rgb(96, 43, 43);
-} 
+nav a {
+    margin-left: 4rem;
+    font-size: larger;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(96, 43, 43);
+}
+
 nav a:hover,
-.active{
-    transition: 0.1s;
+.active {
     border-bottom: 2px solid rgb(88, 40, 40);
+    transition: border-bottom 0.1s ease;
 }
 
-#image-change{
-    height: 70vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    animation: backgroundChange 15s infinite; /* 15s cycle, loops forever */
-    background-size: 100%;
-    background-position: center;
-    font-size: 2rem;
-    font-family:'Times New Roman', Times, serif;
-    color:white;
-    
-}
-
-@keyframes backgroundChange {
-    0% { background-image: url('Images/Food-Spread-Blossom-Steakhouse.webp'); }
-    33% { background-image: url('Images/home-hero-vince-lombardis-steakhouse-appleton-wi.jpg'); }
-    66% { background-image: url('Images/Mastros1.jpg') ; }
-    100% { background-image: url('Images/BG_Platters.jpg'); } 
-}
-
-
-
-footer{
-    background-color:white;
+footer {
+    background-color: white;
     width: 100%;
-    
 }
-#footer-logo{
+
+#footer-logo {
     margin: auto;
     width: 20%;
     display: flex;
     justify-content: center;
 }
 
+#check {
+    display: none;
+}
+
+.icons {
+    right: 5%;
+    position: absolute;
+    font-size: 2.8rem;
+    color: rgb(96, 43, 43);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 426px) {
+    header {
+        padding: 1.3rem 5%;
+        height: 80px;
+    }
+
+    #logo img {
+        width: 50%;
+        height: auto;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    nav a:hover,
+    .active{
+        border-bottom:none;
+     }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: white;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        z-index: 10;
+    }
+
+    #check:checked~nav {
+        height: 20rem;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 2rem;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    #check:checked~nav a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+     }
+    
+      .icons #close-icon{
+        display: none;
+      }
+    
+      #check:checked~.icons #close-icon{
+        display: block;
+      }
+}
 
