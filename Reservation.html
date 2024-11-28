@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="Images/logo.webp">
     <link href="style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Reservation.js" defer></script>
 
     <style>
         #calendar-section{
@@ -17,7 +18,78 @@
             min-height: 100vh;
         }
         .wrapper{
+            width: 40%;
+            padding: 1%;
+            background-color: white;
+        }
+        .wrapper #head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:2% 8%;
+        }
+        
+        #head .switch-icons i{
+           font-size: 2rem;
+           
+           border-radius: 50%;
+           cursor: pointer;
+           
+        }
+        #head .switch-icons i:hover{
+            background-color: rgb(216, 216, 216);
+        }
+        .calendar{
+            padding: 5%;
+        }
+        .calendar ul{
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .days li{
+            z-index: 1;
+            cursor: pointer;
+            margin-top: 5%;
 
+        }
+        .inactive{
+            color: rgb(180, 180, 180,0.8);
+            pointer-events: none;
+        }
+        .current-active{
+            pointer-events: none;
+        }
+        .weeks li{
+            font-weight: 1000;
+        }
+        .calendar ul li{
+            position: relative;
+            width: calc(100%/7);
+        }
+        .calendar .days li::before{
+            position: absolute;
+            content: "";
+            height: 40px;
+            width: 40px;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        .days li:hover::before{
+            background: #dfdfdf;
+            
+        }
+        .current-active::before{
+            background-color: rgb(200, 227, 0);
+            z-index: 100;
+        }
+        .current-active:hover::before {
+            background:unset;
         }
 
 
@@ -46,74 +118,67 @@
     </header>
     <main>
 
-     
+        
 
         <section id="calendar-section">
-            <div class="wrapper"></div>
-            <div>
-
-                <p class="current-date">December 2024</p>
-                <div class="icons">
-                    <i class='bx bx-chevron-left'></i>
-                    <i class='bx bx-chevron-right'></i>
+            <div class="wrapper">
+                <div id="head">
+                    <h1 class="current-date">December 2024</h1>
+                    <div class="switch-icons">
+                        <i class='bx bx-chevron-left'></i>
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
                 </div>
-            </div>
-            <div class="calendar">
-                <ul class="weeks">
-                    <li>Sun</li>
-                    <li>Mon</li>
-                    <li>Tue</li>
-                    <li>Wed</li>
-                    <li>Thu</li>
-                    <li>Fri</li>
-                    <li>Sat</li>
-                </ul>
-                <ul class="days">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    <li>29</li>
-                    <li>30</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    
-                
-                </ul>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li class="current-active">27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                        <li class="inactive">1</li>
+                        <li class="inactive">2</li>
+                        <li class="inactive">3</li>
+                        <li class="inactive">4</li>
+                       
+                    </ul>
 
+                </div>
             </div>
 
         </section>
