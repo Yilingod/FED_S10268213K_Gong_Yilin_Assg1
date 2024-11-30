@@ -60,12 +60,20 @@
         display: flex;
         margin: 5%;
       }
+
+      #section2-box2 img {
+        margin-left: 35%;
+      }
+      #section2-box2 p{
+        margin-right: 10%;
+      }
+
       .menu-section2-boxes img{
         width: 27%;
         height: fit-content;
       }
       .section2-text{
-            margin-left: 5%; 
+          margin-left: 5%; 
             
       }
       .section2-text p{
@@ -101,11 +109,11 @@
       }
 
       .section3-big-boxes p{
-        color: #ccc;
+        color: white;
         line-height: 1.6;
         margin-top: 3%;
         width: 60%;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
       #section3-small{
         display: flex;
@@ -134,6 +142,126 @@
         border: solid gold 1px;
       }
       
+
+      @media (max-width: 426px) {
+
+        #menu-top{
+          background-size: cover;
+          height: 90vh;
+        }
+
+        #title{
+
+          font-size: 2rem;
+          margin: 25% 0%;
+          border: none;
+        }
+        /* Responsive design for section 1 */
+        #menu-section1{
+          flex-direction: column;
+          padding:0;
+        }
+
+        #menu-section1 div{
+          margin:10% 0%;
+          text-align: justify;
+        }
+
+        #menu-section1 img{
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          margin: 0;
+        }
+
+        /* Responsive design for section 2 */
+        #menu-section2{
+        padding: 2% 2%;
+        
+        }
+
+        .menu-section2-boxes{
+          flex-direction: column-reverse;
+        }
+
+        .menu-section2-boxes img{
+          width: 100%;
+          margin:8% 0%;
+        
+        }
+
+        .section2-text{
+            margin-left: 0; 
+            text-align: justify;
+            
+        }
+
+        .section2-text p{
+          margin-right: 0;
+         
+        }
+
+        #section2-box2 img {
+          margin-left: 0%;
+        }
+        #section2-box2 p{
+          margin-right: 0%;
+        }
+
+        /* Responsive design for section 3 */
+
+
+        #menu-section3{
+          
+        }
+        #section3-big{
+        
+          flex-direction: column;
+        }
+
+        .section3-big-boxes{
+          margin: 8% 0%;
+        }
+
+        .section3-big-boxes img{
+            width:85%;
+       
+        }
+
+        .section3-big-boxes h1 {
+        font-size: 2rem;
+        }
+
+        .section3-big-boxes p {
+          width: 85%;
+          
+        }
+
+        #section3-list{
+          flex-direction: row;
+          flex-wrap:wrap;
+         
+
+        }
+
+        #section3-list li{
+           
+          width: 50%;
+          margin: 5% 0%;
+        }
+        #section3-list li img{
+          width: 80%;
+        
+        }
+
+        #section3-list li h1{
+          
+          font-size: 1rem;
+      
+        }
+
+      }
+
     </style>
 </head>
 <body>
@@ -176,7 +304,7 @@
         </section>
 
         <section id="menu-section2">
-            <div class="menu-section2-boxes">
+            <div id="section2-box1" class="menu-section2-boxes">
                 <img src="Images/our-features-2.webp" alt="img">
                 <div class="section2-text">   
                     <h1>Luger Burger</h1><br>
@@ -187,11 +315,11 @@
                 </div>
             </div>
 
-            <div class="menu-section2-boxes">
-                <img src="Images/our-features-3.webp" alt="img" style="margin-left: 35%;">
+            <div id="section2-box2" class="menu-section2-boxes">
+                <img src="Images/our-features-3.webp" alt="img" >
                 <div class="section2-text">
                     <h1 >Private Label Red Wine</h1><br>
-                    <p style="margin-right: 10%;">
+                    <p>
                         Private label red wine is an essential complement to the dining experience at Peter Luger. It is crafted using low-yield grapes from the western slopes of Oakville, at the heart of Napa Valley. 
                         From cultivation to fermentation, every step is done by hand. You can enjoy the distinct Oakville flavor, characterized by robust structure, supple tannins, and a complex interplay of flavors.
                     </p>
