@@ -9,7 +9,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
-    #title{
+
+        
+
+  
+        #title{
         font-size: 3rem;
         display: flex;
         justify-content: center;
@@ -17,50 +21,122 @@
         margin: 5% 38% ;
         padding: 0%;
         border-bottom: solid rgb(25, 0, 0) 5px;
-        /* padding: 5%; */
+        
 
-      }
+        }
       .background{
         height: auto; /* Adjust height dynamically */
         display: flex;
         flex-direction: column; 
         align-items: center; /* Vertically align items */
         
-      }
-    .history-box{
-        margin: 6%;
-        display: flex;
-        flex-direction: row;
-    }
-    .history-box{
-        margin: 2%;
-        margin-top: 5%;
-    }
-    .history-box-text{
-        margin: 0% 5%;
-    }
-    .history-box-text h1{
-        font-size: 2rem;
-    }
-    .history-box-text p{
-        font-size: 100%;
-        line-height: 2;
+        }
+        .history-box{
+            
+            display: flex;
+            flex-direction: row;
+            margin: 2%;
+            margin-top: 5%;
+        }
         
-    }
-    .history-box img{
-        width: 45%;
-    }
-    .history-box2{
-        display: flex;
-        direction: row;
-        justify-content: center;
-    }
+        .history-box-text{
+            margin: 0% 5%;
+        }
+        .history-box-text h1{
+            font-size: 2rem;
+        }
+        .history-box-text p{
+            font-size: 100%;
+            line-height: 2;
+            word-spacing: 4px;
+            
+        }
+        .history-box img{
+            width: 45%;
+        }
+        .history-box2{
+            display: flex;
+            justify-content: center;
+        }
 
-    .history-box2 img{
-        width: 35%;
-        margin:6%
-    }
+        .history-box2 img{
+            width: 35%;
+            margin:6%
+    
+        }
 
+        #section2-img{
+            margin-left: 4%;
+        }
+
+    @media (max-width: 426px) {
+
+        #head-img{
+            width: 100%; /* Set the desired width of the container */
+            height: 50vh; /* Set the desired height of the container */
+            overflow: hidden; /* Hide the overflow of the image */
+            position: relative; /* Ensure the image stays within the container */
+        }
+
+        #head-img img{
+            width: 100%;
+            height: 100%; /* Scale the image to fit the height of the container */
+            object-fit: cover; /* Ensures the image fills the container without distortion */
+            object-position: center; /* Centers the image to show the middle portion */
+        }
+
+        #title{
+            font-size: 2rem;
+            font-family:'Times New Roman', Times, serif;
+            font-weight:100 ;
+            margin: 28% 0%;
+            border: none;
+        }
+        .history-box{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            margin-top: 8%;
+        }
+
+        .history-box-text h1{
+            font-size: 1.5rem;
+        }
+
+        .history-box-text p{
+            font-size: 1rem;
+            line-height: 2;
+            text-align: justify;
+            margin-bottom: 8%;
+        }
+
+        .history-box img{
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .history-box2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .history-box2 img{
+            width: 90%;
+            margin:6%
+    
+        }
+
+        #section2-box1{
+            flex-direction: column-reverse;
+        }
+
+        #section2-img{
+            margin-left: 0;
+        }
+
+    }
     
 
 
@@ -90,16 +166,24 @@
 
     </header>
     <main>
-        <img style="width: 100%;" src="Images/about-us-head.webp" alt="img">
+        <div id = "head-img">
+            <img style="width: 100%;" src="Images/about-us-head.webp" alt="img">
+        </div>
+        
         <h1 id = "title">Peter Luger's Story</h1>
         <section class = "background" style=" background-color: rgb(25, 0, 0);">
             
             <div class = "history-box">
                 <div class="history-box-text">
                     <h1 style="color: burlywood;">One of the oldest steakhouses in America</h1><br>
-                    <p style="color: aliceblue;">Founded in 1887 in Brooklyn, "Peter Luger Steak House" (hereinafter referred to as Peter Luger) is one of the oldest steakhouses in the United States. The original name of the establishment was "Carl Luger's Café, Billiards & Bowling Alley." Peter Luger, a German immigrant, was the owner, with his nephew Carl managing the kitchen.<br><br>
-                         Initially, Peter Luger was a local restaurant beloved by nearby residents. However, in 1903, with the opening of the Williamsburg Bridge, Brooklyn became easily accessible from Manhattan. Businessmen from Wall Street and other areas began hearing about the restaurant, and the restaurant flourished. In 1920, Sol Forman, the current owner's family, established a metalworking company across from Carl Luger's Café. For Sol, Carl Luger's Café was the perfect place to entertain customers, and he visited almost every day, sometimes even two or three times a day.<br><br> 
-                         In 1941, the founder, Peter, passed away. The restaurant was taken over by his son, Frederick, and the name was changed to the current "Peter Luger Steak House." By the end of the 1940s, as the United States faced a severe economic downturn, Peter Luger also experienced financial difficulties and was eventually put up for auction. Sol, not wanting to lose a place that served customers so well, participated in the auction and became the owner of the restaurant.
+                    <p style="color: aliceblue;">
+                        Peter Luger Steak House, a Brooklyn institution, traces its roots back to 1887 when it opened its doors as Carl Luger's Café, Billiards & Bowling Alley. Under the ownership of German immigrant Peter Luger, the establishment began as a local gathering place for the neighborhood's German population.<br><br>
+
+                        The restaurant's fortunes changed with the opening of the Williamsburg Bridge in 1903. The bridge connected Brooklyn to Manhattan, bringing a wave of new patrons, including Wall Street businessmen. Drawn to the restaurant's reputation for quality and ambiance, these visitors helped elevate Peter Luger to a culinary destination.<br><br>
+                        
+                        In the 1940s, the restaurant experienced a significant shift. After Peter Luger's passing in 1941, his son Frederick took over the reins. However, by the late 1940s, the restaurant faced economic challenges. It was during this time that Sol Forman, a regular patron and local businessman, acquired Peter Luger. Forman's vision and dedication ensured the restaurant's survival and continued its legacy of culinary excellence. <br><br>
+                        
+                        Today, Peter Luger remains a beloved institution, renowned for its dry-aged steaks, signature sides, and timeless atmosphere. The restaurant's commitment to quality and tradition has solidified its place in culinary history.
                     </p>
                 </div>
                 <img src="Images/restaurant_old_photo.webp" alt="img" style="margin-right: 4%;">
@@ -111,15 +195,20 @@
         </section>
 
         <section class="background">
-            <div class = "history-box">
-                <img src="Images/story-2-1.jpg" alt="img" style="margin-left: 4%;">
+            <div id="section2-box1" class = "history-box">
+                <img src="Images/story-2-1.jpg" alt="img" id ="section2-img">
                 <div class="history-box-text">
                     <h1 style="color: rgb(64, 0, 0)">The Seven Criteria for Selecting Beef</h1><br>
-                    <p>Sol, an expert in factory management but inexperienced in restaurant operations, sought to bridge the gap by enlisting the expertise of a retired beef specialist from the United States Department of Agriculture (USDA) to educate his wife, Marsha, in the nuances of discerning the finest beef. He firmly believed that securing the best ingredients was the key to delivering exceptional steaks.<br><br>
+                    <p>
+                        Since 1887, Peter Luger Steak House has been synonymous with exceptional steakhouse dining. At the heart of our culinary tradition lies a relentless pursuit of perfection, beginning with the meticulous selection of our prime beef.<br><br>
 
-                        Marsha diligently immersed herself in the art of beef selection by visiting various packers. In the New York meat processing industry of that era, she stood out as the sole tall, Russian-speaking woman in a fur coat, yet her passion for the job surpassed her peers. In pursuit of the best beef for the restaurant, Marsha established stringent "Seven Criteria," with only around 20% of the delivered beef meeting her standards. Thanks to her dedication, the restaurant regained its former glory and became prosperous once again.<br><br>
-                        
-                        The commitment to selecting the finest beef was handed down to Sol and Marsha's daughters, Marilyn Speyer (former president) and Amy Rubenstein (current president). Today, in addition to Amy, Marilyn's daughter Jody and Jody's nephews Daniel and David also participate in managing the restaurant. They visit multiple beef wholesalers every week, endorsing the beef selected through the "Seven Criteria" with their stamp. This stamp serves as the hallmark of the beef purchased by Peter Luger. With a trust established over 70 years, they have earned the privilege of choosing the best beef ahead of any other restaurant.
+                        Our experienced meat buyers scour the country, seeking out the finest cuts. They examine each piece with a discerning eye, assessing its marbling, color, and texture. Only the top 2% of all prime beef meets our exacting standards.<br><br>
+
+                        Once selected, the beef embarks on a rigorous aging process. This time-honored technique, perfected over generations, allows the meat to tenderize naturally and develop a rich, complex flavor. Our skilled butchers monitor this process closely, ensuring optimal aging for each cut.<br><br>
+
+                        The result is a steak that is not just a meal, but a culinary masterpiece. When you dine at Peter Luger, you're experiencing the culmination of generations of expertise and unwavering dedication to quality.<br><br>
+
+                        From the moment you step into our historic Brooklyn establishment, you're transported to a world of timeless elegance and unparalleled flavor. Our commitment to excellence extends beyond the plate, encompassing every aspect of your dining experience.
                     </p>
 
                 </div>
@@ -137,11 +226,15 @@
                 <div class="history-box-text">
                     <h1 style="color: burlywood;">Secret dry-aging technique</h1><br>
                     <p style="color: aliceblue;">
-                        Marsha was thoroughly committed to the dry-aging technique to maximize the flavor of the beef. The dry-aging method devised by Marsha continues to be passed down as a closely guarded secret. The dry-aging room in the basement of the flagship restaurant is locked, and only the four family owners and a few cooking staff have insight into the entire process of this unique dry-aging method.<br><br>
+                        At Peter Luger Steak House, we believe that the true magic of a great steak lies in the art of aging. This time-honored tradition, perfected over generations, is the cornerstone of our culinary philosophy.<br><br>
 
-                        Generally, the dry-aging technique involves controlling temperature, humidity, and airflow to stimulate the water activity within the beef, condensing proteins and minerals toward the core of the red meat. Furthermore, enzymes within muscle cells and specific microorganisms break down proteins, dramatically increasing the umami amino acids and creating tender and juicy meat.<br><br>
-
-                        While the basic principles of dry-aging at Peter Luger are similar, they have succeeded in suppressing unwanted aging odors that may impart off-flavors through special techniques and innovations. Thanks to this secret method. Peter Luger consistently achieves a distinctive richness and tenderness, allowing the appreciation of the natural beef aroma in the crafting of the finest steak.
+                        We meticulously select the finest prime beef, sourced from the heartland of American cattle country. Each cut is then placed in our climate-controlled aging room, where it undergoes a transformative process. As time passes, enzymes within the meat break down, tenderizing the fibers and concentrating the flavor. The result is a steak of unparalleled tenderness and depth of flavor.<br><br>
+                        
+                        Our skilled chefs, drawing on generations of expertise, grill each steak to perfection. The precise balance of heat and time ensures a juicy, flavorful, and visually stunning masterpiece. The aroma of sizzling steak fills the air, tantalizing your senses and heightening your anticipation.<br><br>
+                        
+                        When you savor a Peter Luger steak, you're not just enjoying a meal; you're experiencing a culinary journey. The rich, complex flavors and tender texture will transport you to a world of pure indulgence.<br><br>
+                        
+                        Indulge in the timeless tradition of Peter Luger. Discover the extraordinary taste of our dry-aged steaks and experience a dining experience that will leave you craving more.
 
                     </p>
 
