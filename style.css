@@ -104,7 +104,7 @@ footer {
     }
 
     #check:checked~nav {
-        height: 20rem;
+        height: 16rem;
     }
 
     nav a {
